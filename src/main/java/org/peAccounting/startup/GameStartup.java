@@ -17,8 +17,8 @@ public class GameStartup {
     public static void main(String[] args) throws InterruptedException {
         try {
             int gridSize = Integer.parseInt(args[0]);
-            int numberOfRandomCells =  Integer.parseInt(args[0]);
-            int numberOfGenerations =  Integer.parseInt(args[0]);
+            int numberOfRandomCells =  Integer.parseInt(args[1]);
+            int numberOfGenerations =  Integer.parseInt(args[2]);
             GameOfLife gameOfLife = new GameOfLife(gridSize, numberOfRandomCells);
             Controller controller = new Controller(gameOfLife);
             MainView mainView = new MainView(controller);
