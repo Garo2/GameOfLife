@@ -9,8 +9,8 @@ public class Utilities {
 
     /**
      * generate a random number between @lowerBound and @upperBound
-     * @param lowerBound the least possible value to be randomized
-     * @param upperBound the greatest possible value to be randomized
+     * @param lowerBound the least possible value to be randomized (lowerBound value is included)
+     * @param upperBound the greatest possible value to be randomized (upperBound value is excluded)
      * @return the randomized number.
      */
     public static int generateRandomInBound(int lowerBound, int upperBound) {
